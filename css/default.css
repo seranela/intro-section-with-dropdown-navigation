@@ -132,6 +132,10 @@ header {
   transition: transform 0.2s;
 }
 
+.submenu-link:hover::after {
+  filter: brightness(0);
+}
+
 .submenu-link-expanded::after {
   transform: rotate(180deg);
 }
