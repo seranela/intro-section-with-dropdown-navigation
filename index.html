@@ -2,38 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="description" content="Frontend Mentor Challenge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/default.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    <img src="images/logo.svg" alt="Snap logo" class="logo">
+    <button id="menu-toggle" class="nav-main-button" aria-label="Toggle Menu">
+      <span class="sr-only">Toggle Menu</span>
+    </button>
+    <nav id="nav-main" class="nav-main" aria-labelledby="menu-toggle" aria-expanded="false">
+      <div class="overlay-see-through">
+        <ul id="nav-main-list" class="nav-main-list">
+          <li>
+            <a href="#" class="submenu-link">Features</a>
+            <ul class="nav-main-sublist" aria-expanded="false">
+              <li><a href="#" class="menu-link-todo">Todo List</a></li>
+              <li><a href="#" class="menu-link-calendar">Calendar</a></li>
+              <li><a href="#" class="menu-link-reminder">Reminders</a></li>
+              <li><a href="#" class="menu-link-planning">Planning</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="submenu-link">Company</a>
+            <ul class="nav-main-sublist" aria-expanded="false">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="account-buttons">
+          <a href="#" class="link-button link-button-plain">Login</a>
+          <a href="#" class="link-button link-button-inverse">Register</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  Features
-  Company
-  Careers
-  About
+  <main>
+    <picture class="body-picture">
+      <source media="(min-width: 768px)" srcset="images/image-hero-desktop.png">
+      <img src="images/image-hero-mobile.png" alt="">
+    </picture>
 
-  Login
-  Register
+    <div class="body-content">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <a href="#" class="link-button">Learn more</a>
+    </div>
 
-  Make remote work
+    <div class="client-logos">
+      <img src="images/client-databiz.svg" alt="Databiz logo">
+      <img src="images/client-audiophile.svg" alt="Audiophile logo">
+      <img src="images/client-meet.svg" alt="Meet logo">
+      <img src="images/client-maker.svg" alt="Maker logo">
+    </div>
+  </main>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="js/default.js"></script>
 </body>
 </html>
