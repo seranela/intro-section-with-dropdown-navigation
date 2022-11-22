@@ -218,7 +218,7 @@ main > * {
   text-align: center;
 }
 
-.link-button:hover {
+.link-button-regular:hover {
   background-color: transparent;
   color: var(--color-neutral-almost-black);
   outline: 2px solid var(--color-neutral-almost-black);
@@ -227,13 +227,13 @@ main > * {
 .link-button-inverse {
   background-color: transparent;
   color: var(--color-neutral-medium-gray);
-  outline: 2px solid var(--color-neutral-medium-gray);
+  border: 2px solid var(--color-neutral-medium-gray);
 }
 
 .link-button-inverse:hover {
   background-color: transparent;
   color: var(--color-neutral-almost-black);
-  outline: 2px solid var(--color-neutral-almost-black);
+  border: 2px solid var(--color-neutral-almost-black);
 }
 
 .link-button-plain {
