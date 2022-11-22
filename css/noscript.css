@@ -1,0 +1,20 @@
+.nav-main-button:focus + .nav-main {
+  display: block;
+}
+
+.nav-main-sublist {
+  display: flex;
+  padding-top: 1.4em;
+}
+
+/* Responsive media queries */
+
+@media (min-width: 768px) {
+  .nav-main-sublist {
+    display: none;
+  }
+
+  .submenu-link:focus + .nav-main-sublist {
+    display: flex;
+  }
+}
